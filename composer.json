@@ -1,0 +1,21 @@
+{
+    "name": "htpdf/htpdf",
+    "description": "PHP SDK for the HTPDF API — generate PDFs, screenshots, and more",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        { "name": "Hass Tech LLC", "email": "support@htpdf.net" }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HTPDF\\": "src/"
+        }
+    },
+    "homepage": "https://htpdf.net",
+    "keywords": ["pdf", "api", "html-to-pdf", "screenshot", "document"]
+}
