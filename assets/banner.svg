@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="HTPDF PHP SDK — PHP SDK for HT-PDF API">
+  <defs>
+    <linearGradient id="g-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a14"/>
+      <stop offset="100%" stop-color="#16161f"/>
+    </linearGradient>
+    <linearGradient id="g-glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.0"/>
+      <stop offset="50%" stop-color="#00d4ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.32"/>
+    </linearGradient>
+    <linearGradient id="g-title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="g-bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="g-orb" cx="100%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.30"/>
+      <stop offset="55%" stop-color="#8b5cf6" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#0a0a14" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#g-bg)"/>
+  <rect width="1200" height="300" fill="url(#g-glow)"/>
+  <ellipse cx="1100" cy="-30" rx="500" ry="380" fill="url(#g-orb)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="6" height="300" fill="url(#g-bar)"/>
+
+  <!-- HassTech mark -->
+  <g transform="translate(64, 60)">
+    <rect width="42" height="42" rx="10" fill="url(#g-bar)"/>
+    <text x="21" y="28" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">H</text>
+  </g>
+  <text x="120" y="89" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#e2e8f0">HassTech Suite</text>
+
+  <!-- Title -->
+  <text x="64" y="190" font-family="Arial, Helvetica, sans-serif" font-size="84" font-weight="900" fill="url(#g-title)">HTPDF PHP SDK</text>
+
+  <!-- Tagline -->
+  <text x="64" y="232" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="500" fill="#94a3b8">PHP SDK for HT-PDF API</text>
+
+  <!-- Bottom hairline -->
+  <line x1="64" y1="262" x2="1136" y2="262" stroke="#1e1e2e" stroke-width="1"/>
+  <text x="1136" y="282" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#475569" text-anchor="end">hasstechapi.com</text>
+</svg>
