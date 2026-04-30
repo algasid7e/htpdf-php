@@ -1,45 +1,52 @@
-# HTPDF PHP SDK
+<div align="center">
+  
+# 🐘 HTPDF PHP SDK
 
-Generate PDFs, screenshots, and hosted documents via the [HTPDF API](https://htpdf.net).
+**Official PHP SDK for the HTPDF Generation API**
 
-## Install
+[![PHP 8.1+](https://img.shields.io/badge/PHP-8.1+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+[![Composer](https://img.shields.io/badge/Composer-885630?style=for-the-badge&logo=composer&logoColor=white)](https://getcomposer.org/)
+
+</div>
+
+<br />
+
+## 🌟 Overview
+
+The official PHP SDK for [HTPDF](https://htpdf.net) — a high-performance PDF generation API running at the edge. Easily convert HTML or URLs into beautiful, print-ready PDFs directly from your PHP applications.
+
+## 🚀 Key Features
+
+- **HTML to PDF**: Convert any raw HTML string into a PDF instantly.
+- **URL to PDF**: Snapshot live web pages with a single method call.
+- **Async Processing**: Built-in support for long-running PDF jobs with automatic polling.
+- **Document Hosting**: Securely host generated PDFs with expiration rules.
+
+## ⚙️ Installation
 
 ```bash
 composer require htpdf/htpdf
 ```
 
-## Quick Start
+## 💻 Quick Start
 
 ```php
 <?php
 require_once 'vendor/autoload.php';
-
 use HTPDF\Client;
 
-$client = new Client('htpdf_live_...');
+$client = new Client('htpdf_live_your_api_key_here');
 
-// HTML to PDF
+// Generate a PDF from HTML
 $result = $client->htmlToPdf('<h1>Hello World</h1>');
-echo $result['pdf_id'] . "\n";
+echo "PDF ID: " . $result['pdf_id'] . "\n";
 
-// Download
+// Download the generated PDF to your local filesystem
 $pdfBytes = $client->download($result['pdf_id']);
 file_put_contents('output.pdf', $pdfBytes);
-
-// URL to PDF
-$result = $client->urlToPdf('https://example.com');
-
-// Async PDF (Pro+)
-$job = $client->asyncPdf('html', ['html' => '<h1>Async</h1>']);
-$completed = $client->waitForAsyncJob($job['job_id']);
-
-// Document Hosting (Pro+)
-$doc = $client->createHostedDocument($result['pdf_id'], [
-    'expires_in_hours' => 24,
-]);
-echo $doc['url'] . "\n"; // /d/abc12345
 ```
 
-## License
-
-MIT
+<hr />
+<div align="center">
+  <i>Seamless edge PDF generation for modern PHP.</i>
+</div>
