@@ -1,54 +1,63 @@
 <div align="center">
-  
-# 🐘 HTPDF PHP SDK
 
-**Official PHP SDK for the HTPDF Generation API**
+<img src="./assets/banner.svg" alt="HTPDF PHP SDK — PHP SDK for HT-PDF API" width="100%">
 
-[![PHP 8.1+](https://img.shields.io/badge/PHP-8.1+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
-[![Composer](https://img.shields.io/badge/Composer-885630?style=for-the-badge&logo=composer&logoColor=white)](https://getcomposer.org/)
+# HTPDF PHP SDK
+
+### PHP SDK for HT-PDF API
+
+_Official PHP SDK for HTPDF — first-class API client with production-grade error handling, retries, and streaming._
+
+![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)&nbsp;![Language](https://img.shields.io/badge/language-PHP-3178C6?style=flat-square)&nbsp;![Framework](https://img.shields.io/badge/framework-Composer%20package-7c3aed?style=flat-square)&nbsp;![Status](https://img.shields.io/badge/status-Stable-10b981?style=flat-square)
 
 </div>
 
-<br />
+---
 
-![HTPDF PHP Banner](assets/banner.png)
+## 🚀 Features
 
-## 🌟 Overview
+- **First-class typed API client (PHP 8.1+)**
+- **Production-grade retry and timeout policies**
+- **Streaming downloads for large PDFs**
+- **Advanced authentication** — API keys, scoped tokens
+- **Composer-installable, zero runtime dependencies beyond PSR-18**
 
-The official PHP SDK for [HTPDF](https://htpdf.net) — a high-performance PDF generation API running at the edge. Easily convert HTML or URLs into beautiful, print-ready PDFs directly from your PHP applications.
+---
 
-## 🚀 Key Features
+## 🛠️ Tech Stack
 
-- **HTML to PDF**: Convert any raw HTML string into a PDF instantly.
-- **URL to PDF**: Snapshot live web pages with a single method call.
-- **Async Processing**: Built-in support for long-running PDF jobs with automatic polling.
-- **Document Hosting**: Securely host generated PDFs with expiration rules.
+![PHP 8.1+](https://img.shields.io/badge/-PHP%208.1%2B-1f2937?style=flat-square) ![Guzzle / PSR-18 HTTP](https://img.shields.io/badge/-Guzzle%20/%20PSR-18%20HTTP-1f2937?style=flat-square) ![Composer](https://img.shields.io/badge/-Composer-1f2937?style=flat-square)
 
-## ⚙️ Installation
+---
+
+## 📦 Installation
 
 ```bash
-composer require htpdf/htpdf
+# Clone
+gh repo clone algasid7e/htpdf-php
+cd htpdf-php
+
+# Install — see project docs for the exact toolchain
 ```
 
-## 💻 Quick Start
+---
 
-```php
-<?php
-require_once 'vendor/autoload.php';
-use HTPDF\Client;
+## 🧪 Usage
 
-$client = new Client('htpdf_live_your_api_key_here');
+See the project's docs and `examples/` directory (where present). The package follows first-class semantic versioning and ships typed APIs.
 
-// Generate a PDF from HTML
-$result = $client->htmlToPdf('<h1>Hello World</h1>');
-echo "PDF ID: " . $result['pdf_id'] . "\n";
+---
 
-// Download the generated PDF to your local filesystem
-$pdfBytes = $client->download($result['pdf_id']);
-file_put_contents('output.pdf', $pdfBytes);
-```
+## 📜 License
 
-<hr />
+MIT
+
+---
+
 <div align="center">
-  <i>Seamless edge PDF generation for modern PHP.</i>
+
+**Built by [Hassan Algasid](https://hasstechapi.com) · Part of the [HassTech Suite](https://hasstechapi.com)**
+
+[Website](https://hasstechapi.com) · [Contact](https://hasstechapi.com/contact)
+
 </div>
