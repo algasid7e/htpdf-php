@@ -11,6 +11,8 @@
 
 <br />
 
+![HTPDF PHP Banner](assets/banner.png)
+
 ## 🌟 Overview
 
 The official PHP SDK for [HTPDF](https://htpdf.net) — a high-performance PDF generation API running at the edge. Easily convert HTML or URLs into beautiful, print-ready PDFs directly from your PHP applications.
