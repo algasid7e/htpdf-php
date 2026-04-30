@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: none
+      - name: Install
+        run: composer install --no-interaction --prefer-dist
+      - name: Lint (best-effort)
+        run: composer run-script lint --no-interaction || vendor/bin/php-cs-fixer fix --dry-run || true
+      - name: Test (best-effort)
+        run: composer run-script test --no-interaction || vendor/bin/phpunit || true

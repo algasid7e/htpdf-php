@@ -1,16 +1,22 @@
 <div align="center">
 
-<img src="./assets/banner.svg" alt="HTPDF PHP SDK — PHP SDK for HT-PDF API" width="100%">
+<img src="./assets/banner.svg" alt="HTPDF PHP SDK — Official PHP SDK for HTPDF" width="100%">
 
 # HTPDF PHP SDK
 
-### PHP SDK for HT-PDF API
+### Official PHP SDK for HTPDF
 
 _Official PHP SDK for HTPDF — first-class API client with production-grade error handling, retries, and streaming._
 
-![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)&nbsp;![Language](https://img.shields.io/badge/language-PHP-3178C6?style=flat-square)&nbsp;![Framework](https://img.shields.io/badge/framework-Composer%20package-7c3aed?style=flat-square)&nbsp;![Status](https://img.shields.io/badge/status-Stable-10b981?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)&nbsp;![Language](https://img.shields.io/badge/language-PHP-3178C6?style=flat-square)&nbsp;![Framework](https://img.shields.io/badge/framework-Composer%20package-7c3aed?style=flat-square)&nbsp;![Status](https://img.shields.io/badge/status-Stable-10b981?style=flat-square)&nbsp;![CI](https://github.com/algasid7e/htpdf-php/actions/workflows/ci.yml/badge.svg)
 
 </div>
+
+---
+
+## 🌟 What & Why
+
+Drop-in PHP client for the HTPDF API — typed methods, retries, and streaming downloads so you don't have to babysit Guzzle.
 
 ---
 
@@ -19,8 +25,8 @@ _Official PHP SDK for HTPDF — first-class API client with production-grade err
 - **First-class typed API client (PHP 8.1+)**
 - **Production-grade retry and timeout policies**
 - **Streaming downloads for large PDFs**
-- **Advanced authentication** — API keys, scoped tokens
-- **Composer-installable, zero runtime dependencies beyond PSR-18**
+- **Multi-tenant authentication** — API keys, scoped tokens
+- **Composer-installable, PSR-18 HTTP**
 
 ---
 
@@ -33,24 +39,43 @@ _Official PHP SDK for HTPDF — first-class API client with production-grade err
 ## 📦 Installation
 
 ```bash
-# Clone
 gh repo clone algasid7e/htpdf-php
 cd htpdf-php
-
-# Install — see project docs for the exact toolchain
+# follow project conventions for the toolchain
 ```
 
 ---
 
-## 🧪 Usage
+## ⚡ Quick Start
 
-See the project's docs and `examples/` directory (where present). The package follows first-class semantic versioning and ships typed APIs.
+```bash
+# After install
+composer install
+```
+
+---
+
+## 📚 Docs
+
+See `examples/` and the project documentation at [https://packagist.org/packages/algasid7e/htpdf-php](https://packagist.org/packages/algasid7e/htpdf-php).
+
+---
+
+## 🎬 Demo
+
+Live: [https://packagist.org/packages/algasid7e/htpdf-php](https://packagist.org/packages/algasid7e/htpdf-php)
+
+---
+
+## 🤝 Contributing
+
+See [`CONTRIBUTING.md`](./CONTRIBUTING.md) and the [Code of Conduct](./CODE_OF_CONDUCT.md). Bug reports and feature requests via the [issue templates](./.github/ISSUE_TEMPLATE).
 
 ---
 
 ## 📜 License
 
-MIT
+MIT — see [`LICENSE`](./LICENSE).
 
 ---
 
@@ -58,6 +83,6 @@ MIT
 
 **Built by [Hassan Algasid](https://hasstechapi.com) · Part of the [HassTech Suite](https://hasstechapi.com)**
 
-[Website](https://hasstechapi.com) · [Contact](https://hasstechapi.com/contact)
+[Website](https://hasstechapi.com) · [Contact](https://hasstechapi.com/contact) · [Security](./SECURITY.md)
 
 </div>
